@@ -10,5 +10,81 @@
         <h1>Ice Cream Shoppe</h1>
     </div>
 </div>
+
+<form>
+    <fieldset>
+        <legend>Customer:</legend>
+        <div class="row">
+            <label for="firstname">first</label>
+            <input id="firstname" name="first_name" type="text">
+        </div>
+</form>
+
+<form>
+    <div class="row">
+        <div>
+            <label for="lastname">last</label>
+            <input id="lastname" name="first_name" type="text">
+        </div>
+    </div>
+    </fieldset>
+</form>
+<div>
+    <div>
+        <fieldset>
+            <legend>Flavor:</legend>
+            <input type="radio" id="vanilla" name="icecream">
+            <label for="vanilla">vanilla</label>
+    </div>
+    <div>
+        <div>
+            <input type="radio" id="strawberry" name="icecream">
+            <label for="strawberry">strawberry</label>
+        </div>
+    </div>
+</div>
+</fieldset>
+<legend>Size:</legend>
+<div>
+    <input type="radio" id="chocolate" name="icecream">
+    <label for="chocolate">chocolate</label>
+</div>
+<fieldset>
+    <legend>Toppings:</legend>
+    <div>
+        <div>
+            <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+            <label for="sprinkles">sprinkles</label>
+        </div>
+        <div>
+            <input type="checkbox" id="whippedcream" name="whippedcream" value="whippedcream">
+            <label for="whippedcream">whipped cream</label>
+        </div>
+        <div>
+            <input type="checkbox" id="caramel" name="caramel" value="caramel">
+            <label for="caramel">caramel sause</label>
+        </div>
+</fieldset>
+<div>
+    <label for="container">Please Choose One</label>
+    <select name="container" id="container">
+        <option value="cup">Plastic Cup</option>
+        <option value="sugar">Sugar Cone</option>
+        <option value="waffle">Waffle Cone</option>
+        <option value="dippedWaffle">Chocolate Dipped Waffle Cone</option>
+    </select>
+</div>
+</div>
+<fieldset>
+    <legend>Special:</legend>
+    <div>
+        <label for="SpecialRequest">Special Requests:</label>
+        <textarea id="SpecialRequest" name="SpecialRequests" rows="4" cols="10"
+                  placeholder="Allergic to peanuts, substitutions, etc"></textarea>
+    </div>
+</fieldset>
+<button type="button" onclick="alert('Free today for our Grand Opening')">Calculate Cost</button>
+<button type="submit">Submit Order</button>
+</form>
 </body>
 </html>
